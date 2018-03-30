@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sign Up
+	</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+<img src="logo.jpg" style="height: 100% width:100% ;text-align:center; margin-left: 42.5%">
+<!-- Form -->
+<div class="container">
+  <h2 style="text-align: center; font-weight: bold;font-size: 40px;">Sign Up</h2>
+  <form action="">
+    <div class="form-group">
+      <label for="FirstName">FirstName:</label>
+      <input type="text" class="form-control" id="fname" placeholder="Enter FirstName" name="FirstName" autofocus="" required="true">
+    </div>
+    <div class="form-group">
+      <label for="LastName">LastName:</label>
+      <input type="text" class="form-control" id="lname" placeholder="Enter LastName" name="LastName" required="true">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Username:</label>
+      <input type="Username" class="form-control" id="uname" placeholder="Enter Username" name="UserName" required="true">
+      <span class="help-block">Username, eg.: Smith11, Harry99</span>
+    </div>
+     <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="Password" required="true">
+    </div>
+    <div class="form-group">
+      <label for="conpwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="conpwd" placeholder="Confirm Password" name="ConfirmPassword" required="true">     </div>
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter Email" name="Email" required="true">
+    </div>
+
+    <div class="form-group">
+                    <label for="BloodGroup">Blood Group:</label>
+                    <div>
+                        <select id="bgroup" class="form-control" name="BloodGroup" required="true">
+                        	<option value="" selected disabled>Please select</option>
+                            <option>O positive</option>
+                            <option>O negative</option>
+                            <option>A positive</option>
+                            <option>A negative</option>
+                            <option>B positive</option>
+                            <option>B negative</option>
+                            <option>AB positive</option>
+                            <option>AB negative</option>
+                        </select>
+                    </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="Age">Age:</label>
+      <input type="number" class="form-control" id="age" placeholder="Enter Age" name="Age" required="true">
+    </div>
+
+    <div class="form-group">
+          <label for="Gender">Gender:</label><br>
+                 
+                <label class="radio-inline">
+                    <input type="radio" id="female" value="Female" name="Gender" required="true">Female
+                </label>
+                           
+                <label class="radio-inline">
+                    <input type="radio" id="male" value="Male" name="Gender" required="true">Male
+                </label>
+                            
+                <label class="radio-inline">
+                    <input type="radio" id="other" value="Other" name="Gender" required="true">Other
+                </label>
+    </div>
+    
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+  </form>
+</div>
+<!-- Form end -->
+
+</body>
+</html>

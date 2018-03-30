@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div id="slideshowImg" style="height: 100px; width: 100%;">
+      <button id="prev" class="btn btn-default" style="color: black;"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></button>
+      <button id="next" class="btn btn-default" style="color: black;"><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></button>
+    </div>
+    <div class="row" style="height: 100%">
+      <div class="col-sm-12" id="image" style="height: 500px">
+      </div>
+    </div>
+  </div>
+
+
+<script>
+
+  var imgArr = [];
+
+  imgArr[0] = "img/1.jpg";
+  imgArr[1] = "img/2.png";
+  imgArr[2] = "img/3.jpg";
+  imgArr[3] = "img/4.gif";
+  imgArr[4] = "img/5.gif";
+  imgArr[5] = "img/6.gif";
+
+  $(document).ready( function(){
+    var i = 0;
+
+    $('#image').css('background-image', 'url('+imgArr[i]+')');
+    
+    
+
+    
+      $('#next').click( function(){
+        if(i>=0 && i<=4){
+          i=i+1;
+          $('#image').css('background-image', 'url('+imgArr[i]+')');
+          }
+        else{
+          //$('#image').css('background-image', 'url('img/1.jpg')');
+          i=0;
+          $('#image').css('background-image', 'url('+imgArr[i]+')');
+        }  
+
+        } );
+      
+    
+
+      $('#prev').click( function(){
+        if(i>=1 && i<=5){
+          i=i-1;
+          $('#image').css('background-image', 'url('+imgArr[i]+')');
+          }
+        else{
+        	i=5;
+          $('#image').css('background-image', 'url('+imgArr[i]+')');
+        }  
+
+      
+
+  } );
+});
+</script>
+
+</body>
+</html>

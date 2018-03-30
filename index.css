@@ -1,0 +1,77 @@
+.menu {
+		
+		background-color:#F8F9FA;
+		overflow: hidden;
+		font-family: trajan_pro;
+		text-align:center;
+		width:100%;
+		font-size: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		
+}
+
+   @media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+#slider
+{
+	max-width:85%;
+	margin-left:8%;
+}
+/*.logo
+{
+	float:left;
+	margin-top: 0px;
+	position: absolute;
+	width: 65px;
+	height:60px;
+	left:0;
+	top:0;
+
+
+}*/
+/*a:link {
+    color: black;
+	text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black ;
+    background-color: white;
+    text-decoration: none;
+
+}
+a:visited {
+    color: #666666;
+    background-color: transparent;
+    text-decoration: none;
+}*/
+.img1 {
+	height: 100%;
+	width: 100%;
+}
+
+.up
+{
+	width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 999999999;
+    display: none;
+    box-sizing: content-box;
+    
+}
+
+.bg-lightgray
+{
+    background-color:LightGray;
+}
